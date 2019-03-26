@@ -1,23 +1,61 @@
 from flask import Flask, url_for, render_template
 app = Flask(__name__)
 
-name = 'guoshibo'
-movies = [
-    {'title': 'my neighbor totoro', 'year': '1988'},
-    {'title': 'dead poets society', 'year': '1989'},
-    {'title': 'a perfect world', 'year': '1993'},
-    {'title': 'leon', 'year': '1994'},
-    {'title': 'mahjong', 'year': '1996'},
-    {'title': 'swallottail butterfly', 'year': '1999'},
-    {'title': 'king if comedy', 'year': '1999'},
-    {'title': 'devils on the doorstep', 'year': '1999'},
-    {'title': 'wall-e', 'year': '2008'},
-    {'title': 'the pork if music', 'year': '2012'},
-]
 
 @app.route('/')
 def index():
-    return render_template('index.html', name= name, movies= movies)
+    return render_template('index.html')
+
+
+@app.route('/activity')
+def activity():
+    return render_template('activity.html')
+
+
+@app.route('/service')
+def service():
+    return render_template('service.html')
+
+
+@app.route('/project')
+def project():
+    return render_template('project.html')
+
+
+@app.route('/team')
+def team():
+    return render_template('team.html')
+
+
+@app.route('/xianhua')
+def xianhua():
+    return render_template('xianhua.html')
+
+
+@app.route('/guanhai')
+def guanhai():
+    return render_template('guanhai.html')
+
+
+@app.route('/hanghai')
+def hanghai():
+    return render_template('hanghai.html')
+
+
+@app.route('/chunhuaqiuse')
+def chunhuaqiuse():
+    return render_template('chunhuaqiuse.html')
+
+
+@app.route('/binhaisenlin')
+def binhaisenlin():
+    return render_template('binhaisenlin.html')
+
+
+@app.route('/shuyuan')
+def shuyuan():
+    return render_template('shuyuan.html')
+
 
 
 

@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v3.8.5">
+  <title>有哲户外</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static',filename= 'css/bootstrap.min.css') }}" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static',filename= 'css/album.css')}}" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">关于我们</h4>
+            <p class="text-muted">
+              有哲户外是一家专业从事拓展培训、夏令营、户外体验、趣味运动会、拓展基地建设的公司，公司由一批充满活力、朝气蓬勃的年轻人组成，他们不仅是拓展训练行业的专家，而且具有丰富的企业体验式管理理论和工作经验，短短三年时间服务人数已超过100000人，为阿里巴巴、华为、中国建设银行、汇丰银行、申万宏源等近千家企业策划、组织、实施过培训活动。
+              深受客户好评，在业内享有很高的盛誉</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Menu</h4>
+            <ul class="list-unstyled">
+              <li><a href="{{ url_for('activity') }}" class="text-white">活动介绍</a></li>
+              <li><a href="{{ url_for('service') }}" class="text-white">服务概况</a></li>
+            </ul>
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="/" class="text-white">Email us: ziyoushibo@gmail.com</a></li>
+              <li><a href="/" class="text-white">phone number: 17041694918</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="/" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+            viewBox="0 0 24 24" focusable="false">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" /></svg>
+          <strong>有哲户外</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ url_for('static',filename= 'img/tanchishe.jpg') }}" style="width: 100%;">
+            <p>
+              <h3>
+                &nbsp 针对企业的服务
+              </h3>
+            </p>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      新员工 岗前培训
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    让新同事从学生快速转化为职业人，实现角色转换，
+                    让新同事意识到自我实现与敬业、责任、忠诚的关系，
+                    让新同事意识到付出的重要性，有“舍”才有“得”，
+                    让新同事认识企业文化，迅速融入团队，实现“1+1>2”，
+                    让新同事清晰自己的目标与责任，创建良好个人品牌
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      销售团队
+                      战斗力培训
+
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    让销售人员扮演好自己的三重角色：
+                    侦察兵——准确挖掘、把握客户需求
+                    产品运用专家——熟知产品特性，针对客户具体情况提出建设性建议
+                    项目经理——整合资源，相关组织部门和人员实现客户需求
+                    剖析自我，挖掘潜能，不断自我激励，养成“打不死”的心态
+                    让员工主动对自己负责，拥有积极主动的工作生活态度，勇于面对
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      中高层
+                      领导力培训
+
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    建立自我领导特质，发挥领导力
+                    培养具有影响力的优秀领导者
+                    了解培育人才的重要性，并能对部属进行工作的教导与训练培养
+                    懂得压力管理，掌握自己的情绪，轻松建立和谐工作关系
+                    掌握人性特点，能够带人带心，激发部属工作意愿，振奋士气
+                    掌握沟通技巧与方法，优化人际关系，透过有效沟通高效完成任务
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
+                      aria-expanded="true" aria-controls="collapseFour">
+                      团队建设训练
+
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    让团队明确个人目标应与企业愿景有效结合
+                    提高团队成员沟通技能
+                    跨越及客服变革后的不适应
+                    激励士气、端正态度、增强团队凝聚力
+                    提倡沟通与协作，打造团队合作基础
+                    增强部门协同配合的效率
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive"
+                      aria-expanded="true" aria-controls="collapseFive">
+                      狼性团队
+                      执行力培训
+
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    如何实现“羊群”变成“狼群”
+                    如何让执行的三要素：战略、战术、人员有机结合
+                    如何组建一支高效执行团队
+                    如何让领导专注一点，成为业务领域的老虎
+                    让员工明白信念比利益更重要、速度比完美更重要、胜利比公平更重要
+                    让员工理解决心第一、成功第二；速度第一、完美第二；结果第一、理由第二
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix"
+                      aria-expanded="true" aria-controls="collapseSix">
+                      心态调整
+                      潜能激发培训
+
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseSix" class="collapse show" aria-labelledby="headingSix"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    认识自我、了解自我的内心需求
+                    调整、更新观念，提升个人能力与综合素质
+                    提升个人管理能力，从管理好自己到管理好他人
+                    管理情绪、释放压力，放下工作、生活中的包袱
+                    心灵解压，保持轻松愉快的步伐向前迈进
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ url_for('static',filename= 'img/zaochuan.jpg') }}" style="width: 100%;">
+            <p>
+              <h3>
+                &nbsp 针对亲子的服务
+              </h3>
+            </p>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      夏令营
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    发现自我、磨练意志
+                    亲近自然、感受生活
+                    合作分享、彼此协作
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      徒步
+
+
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    有效沟通合作 凝聚团队力量
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      趣味运动会
+
+
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    让孩子们体验活动带来的快乐 。
+                    激发孩子们参加体育活动的积极性，发展孩子身体的协调性和灵活性，增强孩子的体质健康
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="{{ url_for('static',filename= 'img/liliang.jpg') }}" style="width: 100%;">
+            <p>
+              <h3>
+                &nbsp 各类活动赛事的举办
+
+              </h3>
+            </p>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      音乐会
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    承办各类大型音乐会以及音乐类比赛，可负责前期策划、场地搭建以及中后期执行完善等
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      车展
+
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    可承办大型车展，为客户打造一场大型的视觉盛宴
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      年会
+
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    为各类大小型公司承办年会，带领员工回顾过去的成功与失败，展望未来。
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour"
+                      aria-expanded="true" aria-controls="collapseFour">
+                      各类体育赛事
+
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour"
+                  data-parent="#accordionExample">
+                  <div class="card-body">
+                    可承办各类体育赛事，马拉松、骑行、帆船、龙舟等，场地、物料齐备。
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="/">Back to top</a>
+      </p>
+      <p>Copy right&copy; 有哲户外</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="/static/js/jquery-3.3.1.slim.min.js"><\/script>')</script>
+  <script src="/static/js/bootstrap.bundle.min.js"
+    integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
